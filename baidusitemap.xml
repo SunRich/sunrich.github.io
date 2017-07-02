@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://www.sunrich.me/2017/06/16/kubernetes/vagrant%E5%AE%89%E8%A3%85kubernetes%E9%9B%86%E7%BE%A4/</loc>
+    <lastmod>2017-07-02T12:24:14.859Z</lastmod>
+    <data>
+        <display>
+        <title>vagrant安装kubernetes集群</title>
+        <pubTime>2017-06-16T05:39:00.000Z</pubTime>
+        
+        <tag>docker</tag>
+         
+        <tag>kubernetes</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.sunrich.me/2017/06/16/docker/docker%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2017-07-02T08:04:31.834Z</lastmod>
     <data>
@@ -14,25 +33,6 @@
         <tag>linux</tag>
          
         <tag>docker</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.sunrich.me/2017/06/16/kubernetes/vagrant%E5%AE%89%E8%A3%85kubernetes%E9%9B%86%E7%BE%A4/</loc>
-    <lastmod>2017-07-02T07:18:07.650Z</lastmod>
-    <data>
-        <display>
-        <title>vagrant安装kubernetes集群</title>
-        <pubTime>2017-06-16T05:39:00.000Z</pubTime>
-        
-        <tag>docker</tag>
-         
-        <tag>kubernetes</tag>
          
          
            
