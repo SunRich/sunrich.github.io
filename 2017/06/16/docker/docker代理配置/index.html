@@ -47,12 +47,12 @@
 <meta property="og:url" content="http://www.sunrich.me/2017/06/16/docker/docker代理配置/index.html">
 <meta property="og:site_name" content="SunRich">
 <meta property="og:description" content="目录 前言 本地代理 阿里云镜像加速 总结对比  前言在使用docker的时候，我们经常要使用docker.hub的镜像源来构建适合我们的docker镜像。但是因为伟大祖国的墙，导致下载镜像的速度非常慢甚至没有下载速度。下面介绍了几种解决docker镜像无法正常下载的方案。 本地代理要使用本地代理，前提是你必须要有科学上网的手段。什么叫科学上网，请自行百度。因为这是程序员的必备技能之一，而且我认为">
-<meta property="og:image" content="http://www.sunrich.me/2017/06/16/docker/docker代理配置/dev.aliyun.com.png">
+<meta property="og:image" content="http://www.sunrich.me/2017/06/16/docker/docker代理配置/docker代理配置/dev.aliyun.com.png">
 <meta property="og:updated_time" content="2017-07-02T08:04:31.834Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker代理配置">
 <meta name="twitter:description" content="目录 前言 本地代理 阿里云镜像加速 总结对比  前言在使用docker的时候，我们经常要使用docker.hub的镜像源来构建适合我们的docker镜像。但是因为伟大祖国的墙，导致下载镜像的速度非常慢甚至没有下载速度。下面介绍了几种解决docker镜像无法正常下载的方案。 本地代理要使用本地代理，前提是你必须要有科学上网的手段。什么叫科学上网，请自行百度。因为这是程序员的必备技能之一，而且我认为">
-<meta name="twitter:image" content="http://www.sunrich.me/2017/06/16/docker/docker代理配置/dev.aliyun.com.png">
+<meta name="twitter:image" content="http://www.sunrich.me/2017/06/16/docker/docker代理配置/docker代理配置/dev.aliyun.com.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -407,7 +407,7 @@
 </li>
 </ol>
 <h2 id="阿里云镜像加速"><a href="#阿里云镜像加速" class="headerlink" title="阿里云镜像加速"></a>阿里云镜像加速</h2><p>ps:本人使用的centos系统，配置步骤仅供参考，其他系统请参照阿里云官方文档</p>
-<h3 id="获取专属加速器地址-访问阿里云镜像服务"><a href="#获取专属加速器地址-访问阿里云镜像服务" class="headerlink" title="获取专属加速器地址,访问阿里云镜像服务"></a>获取专属加速器地址,访问<a href="https://dev.aliyun.com/" target="_blank" rel="external">阿里云镜像服务</a></h3><p><img src="/2017/06/16/docker/docker代理配置/dev.aliyun.com.png" alt="docker代理配置"></p>
+<h3 id="获取专属加速器地址-访问阿里云镜像服务"><a href="#获取专属加速器地址-访问阿里云镜像服务" class="headerlink" title="获取专属加速器地址,访问阿里云镜像服务"></a>获取专属加速器地址,访问<a href="https://dev.aliyun.com/" target="_blank" rel="external">阿里云镜像服务</a></h3><p><img src="docker代理配置/dev.aliyun.com.png" alt="docker代理配置"></p>
 <h3 id="针对Docker客户端版本大于1-10的用户"><a href="#针对Docker客户端版本大于1-10的用户" class="headerlink" title="针对Docker客户端版本大于1.10的用户"></a>针对Docker客户端版本大于1.10的用户</h3><p>您可以通过修改daemon配置文件/etc/docker/daemon.json来使用加速器：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sudo mkdir -p /etc/docker</div><div class="line">sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF'</div><div class="line">&#123;</div><div class="line">  "registry-mirrors": ["https://y58m5c34.mirror.aliyuncs.com"]</div><div class="line">&#125;</div><div class="line">EOF</div><div class="line">sudo systemctl daemon-reload</div><div class="line">sudo systemctl restart docker</div></pre></td></tr></table></figure></p>
 <h3 id="针对Docker客户的版本小于等于1-10的用户"><a href="#针对Docker客户的版本小于等于1-10的用户" class="headerlink" title="针对Docker客户的版本小于等于1.10的用户"></a>针对Docker客户的版本小于等于1.10的用户</h3><p>或者想配置启动参数，可以使用下面的命令将配置添加到docker daemon的启动参数中。</p>
 <ul>
@@ -441,11 +441,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/06/16/kubernetes/vagrant安装kubernetes集群/" rel="prev">vagrant安装kubernetes集群</a>
+              <a href="/2017/07/16/node/node生成二维码/" rel="prev">生成二维码</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/16/linux/linux命令行下代理/" rel="next">linux命令行下设置代理</a>
             
           </div>
         </div>
@@ -528,7 +530,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -542,7 +544,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
